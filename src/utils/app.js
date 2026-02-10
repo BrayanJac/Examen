@@ -14,7 +14,7 @@ function toFahrenheit(c) {
 
 function movingAverage(series, window) {
     if (!Array.isArray(series) || !series.every(Number.isFinite)){
-        throw new TypeError('Todos los valores deben ser numeros finitos');
+        throw new TypeError("Todos los valores deben ser numeros finitos");
     } 
     if (!Number.isInteger(window) || window < 2 || window > series.length) {
         throw new RangeError('Ventana fuera de rango');
