@@ -27,6 +27,9 @@ jobs:
         - name: Ejecutar pruebas
           run: npm test
 
+        - name: Analizar cobertura de pruebas
+          run: npm run coverage
+
         - name: Simular despliegue
           run: |
             echo "Despliegue simulado: La aplicacion pasa el lint 
