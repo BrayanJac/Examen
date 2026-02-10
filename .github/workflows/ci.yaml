@@ -28,7 +28,7 @@ jobs:
           run: npm test
 
         - name: Analizar cobertura de pruebas
-          run: npm run coverage
+          run: npm run test --coverage
 
         - name: Simular despliegue
           run: |
